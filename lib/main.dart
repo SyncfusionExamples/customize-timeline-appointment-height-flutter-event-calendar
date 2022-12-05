@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
-void main() => runApp(TimelineAppointmentHeight());
+void main() => runApp(const TimelineAppointmentHeight());
 
 
 class TimelineAppointmentHeight extends StatelessWidget {
+  const TimelineAppointmentHeight({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,22 +14,22 @@ class TimelineAppointmentHeight extends StatelessWidget {
       home: Scaffold(
           body: SafeArea(
               child: Container(
-        height: 700,
-        child: SfCalendar(
-          view:CalendarView.timelineDay,
-          allowedViews: [
-            CalendarView.timelineDay,
-            CalendarView.timelineWeek,
-            CalendarView.timelineWorkWeek,
-            CalendarView.timelineMonth
-          ],
-          timeSlotViewSettings:
-              TimeSlotViewSettings(timelineAppointmentHeight: 300),
-          dataSource: _getCalendarDataSource(),
-        ),
-      ))
-          // This trailing comma makes auto-formatting nicer for build methods.
-          ),
+                height: 700,
+                child: SfCalendar(
+                  view:CalendarView.timelineDay,
+                  allowedViews: const [
+                    CalendarView.timelineDay,
+                    CalendarView.timelineWeek,
+                    CalendarView.timelineWorkWeek,
+                    CalendarView.timelineMonth
+                  ],
+                  timeSlotViewSettings:
+                  const TimeSlotViewSettings(timelineAppointmentHeight: 300),
+                  dataSource: _getCalendarDataSource(),
+                ),
+              ))
+        // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 
@@ -35,7 +37,7 @@ class TimelineAppointmentHeight extends StatelessWidget {
     List<Appointment> appointments = <Appointment>[];
     appointments.add(Appointment(
       startTime: DateTime.now(),
-      endTime: DateTime.now().add(Duration(hours: 2)),
+      endTime: DateTime.now().add(const Duration(hours: 2)),
       subject: 'Meeting',
       color: Colors.teal,
     ));

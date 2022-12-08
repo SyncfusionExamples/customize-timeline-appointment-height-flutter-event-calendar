@@ -5,6 +5,8 @@ A quick-start example to help you to customize the timeline appointment height i
 The [timelineAppointmentHeight](https://help.syncfusion.com/flutter/calendar/timeslot-views#timeline-appointment-height) property of the [TimeSlotViewSettings](https://pub.dev/documentation/syncfusion_flutter_calendar/latest/calendar/TimeSlotViewSettings/TimeSlotViewSettings.html) in the Flutter Event Calendar allows you to customise the height of appointments in timeline views.
 
  It is applicable only when the calendar view set as TimelineDay, TimelineWeek and TimelineWorkWeek view in SfCalendar.
+ 
+ ![TimelineAppointmentHeight](https://user-images.githubusercontent.com/46158936/206455237-f16b4614-2d14-4510-a814-e6bdc7317dba.gif)
 
 ## Requirements to run the demo
 * [VS Code](https://code.visualstudio.com/download)
